@@ -1,0 +1,16 @@
+.multiplication-table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 30%; 
+    background-color: #f0f0f0; 
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+}
+
+.cell:nth-child(odd) {
+    background-color: #e0e0e0; 
+}
