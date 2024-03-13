@@ -11,4 +11,4 @@ function soNguyenTo(nguyento) {
     return console.log(`${nguyento} là số nguyên tố!!!`);
 }
 
-soNguyenTo(100);
+soNguyenTo(2);

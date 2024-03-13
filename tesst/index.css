@@ -1,0 +1,18 @@
+
+
+div {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .box-black {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+  }
+  
+  .box-white {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+  }
