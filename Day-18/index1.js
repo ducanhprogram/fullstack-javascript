@@ -1,13 +1,10 @@
-"use strict";
-
 let content =
     "Một con vịt xòe ra hai cái cánh, nó kêu rằng quác quác quác quạc quạc quạc";
 
 content = content.replaceAll(" ", "</span> <span>");
-
 content = `<span>${content}</span>`;
 console.log(content);
-let i = 0;
+let index = 0;
 
 setInterval(() => {
     let firstChar = content.charAt(i);
