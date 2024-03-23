@@ -21,12 +21,15 @@ function insertSort(arr, num) {
 
     //Tìm vị trí chèn mới
     var position = arr.length;
+
     for (var i = 0; i < arr.length; i++) {
         if (num < arr[i]) {
             position = i;
             break;
         }
     }
+
+    // console.log(position);
 
     for (var i = arr.length; i > position; i--) {
         arr[i] = arr[i - 1];
@@ -39,7 +42,7 @@ function insertSort(arr, num) {
 }
 
 var newArr = [5, 1, 9, 8, 10];
-var element = 4;
+var element = 7;
 
 var result = insertSort(newArr, element);
 
