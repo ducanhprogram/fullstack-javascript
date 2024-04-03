@@ -11,7 +11,7 @@ function createCustomers(customerArray) {
         console.log(names);
         var shortName =
             names.lenght > 1
-                ? names[0] + " " + names[names.lenght - 1].charAt(0)
+                ? names[0] + " " + names[names.length - 1].charAt(0)
                 : customer.name;
 
         return {
@@ -34,3 +34,7 @@ function createCustomers(customerArray) {
 var result = createCustomers(customers);
 
 console.log(result);
+
+var a = ["Lê", "Đức ", "Anh"];
+
+console.log(a.length);
