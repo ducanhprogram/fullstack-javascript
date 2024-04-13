@@ -1,0 +1,77 @@
+body {
+    background-color: #6a5acd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  .input-group {
+    display: flex;
+  }
+  
+  #taskInput {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 5px; /* Adjust space between input and button */
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #addTaskBtn {
+    padding: 10px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #addTaskBtn:hover {
+    background-color: #7b68ee;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  li {
+    background-color: #444;
+    color: white;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .edit-input {
+    flex-grow: 1;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .edit-btn, .delete-btn {
+    cursor: pointer;
+  }
+  

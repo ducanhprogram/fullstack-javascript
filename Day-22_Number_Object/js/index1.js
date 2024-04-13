@@ -1,22 +1,22 @@
-// Mở rộng prototype của Number
-Number.prototype.getCurrency = function (currency) {
-    return this.toLocaleString() + " " + currency;
-};
+var getTotal = function (...numbers) {
+    if (numbers.length) {
+        var total = 0;
+        var check = numbers.every(function (number) {
+            if (number !== null) {
+                number = +number;
 
-// Mở rộng prototype của String
-String.prototype.getCurrency = function (currency) {
-    // Chuyển đổi chuỗi sang số. Sử dụng Number() để chuyển đổi chuỗi thành số
-    var number = Number(this);
-    if (isNaN(number)) {
-        return "Invalid number";
+                if (!Number.isNaN(number)) {
+                    return true;
+                }
+            }
+        });
+        // if (check) {
+        //     return numbers.reduce(function (total, number) {
+        //         return +total + +number;
+        //     });
+        // }
+        return "Dữ liệu không hợp lệ";
     }
-    return number.toLocaleString() + " " + currency;
 };
 
-// Case 1: Số
-var price = 12000;
-console.log(price.getCurrency("đ")); // Hiển thị: 12,000 đ
-
-// Case 2: Chuỗi
-var priceString = "120000000";
-console.log(priceString.getCurrency("đ")); // Hiển thị: 12,000,000 đ
+console.log(getTotal(5, 10, 15, "20"));
