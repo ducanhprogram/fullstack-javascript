@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kéo thả để tạo danh sách mục tiêu</title>
+        <style>
+            .list-container {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+
+            .list {
+                width: 200px;
+                min-height: 300px;
+                border: 2px solid #ccc;
+                padding: 10px;
+                list-style-type: none;
+            }
+
+            .list li {
+                padding: 10px;
+                margin: 5px 0;
+                background-color: #f4f4f4;
+                cursor: pointer;
+                border: 1px solid #ddd;
+            }
+
+            .list li:hover {
+                background-color: #ddd;
+            }
+
+            .list li.dragging {
+                opacity: 0.5;
+            }
+
+            .target {
+                border-color: #4caf50;
+                background-color: #e7f9e7;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Kéo và Thả để Tạo Danh Sách Mục Tiêu</h1>
+
+        <div class="list-container">
+            <ul id="sourceList" class="list">
+                <li draggable="true">Mục 1</li>
+                <li draggable="true">Mục 2</li>
+                <li draggable="true">Mục 3</li>
+                <li draggable="true">Mục 4</li>
+                <li draggable="true">Mục 5</li>
+            </ul>
+
+            <ul id="targetList" class="list target">
+                <!-- Các mục sẽ được thả vào đây -->
+            </ul>
+        </div>
+
+        <script src="./js/index8.js"></script>
+    </body>
+</html>

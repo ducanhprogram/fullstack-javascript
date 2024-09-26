@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background: #8758ff;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+.TodoWrapper {
+    background-color: #1a1a40;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.app {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.TodoWrapper .todoForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.TodoWrapper .todoForm .todo-input {
+    padding: 10px 16px;
+    border: 1px solid #8758ff;
+    color: #fff;
+    font-size: 14px;
+    width: 300px;
+    background: none;
+
+}
+
+
+.TodoWrapper .todoForm .todo-btn {
+    color: #fff;
+    background: #8758ff;
+    cursor: pointer;
+    padding: 0px 10px; 
+}
+
+
+
+.TodoWrapper .todo {
+    margin-top: 30px;
+    align-items: center;
+    background: #8758ff;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem 1rem;
+}
+
+.TodoWrapper .icon{
+    display: flex;    
+}
+
+.TodoWrapper .icon svg {
+    padding: 5px
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+}
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.completed {
+    color: #c5aeff;
+    text-decoration: line-through;
+  }
+   

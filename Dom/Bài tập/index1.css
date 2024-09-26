@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body {
+    padding: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.modal-box {
+    position: fixed;
+    inset: 0;
+    display: none;
+}
+
+.modal-box .modal {
+    width: 40%;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    position: relative;
+    z-index: 99;
+}
+
+#open-modal:checked ~ .modal-box {
+    display: block;
+}
+
+.open {
+    display: block;
+}
+
+
+.modal-box .modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modal-box .modal .modal-header span {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.modal-box .overlay {
+    background-color: #00000075;
+    position: fixed;
+    inset: 0;
+}

@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    height: 100vh;
+    background: #dadada;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    margin: 50px auto;
+}
+
+.img-feature {
+    transition: all 0.5s linear;
+    cursor: move;
+    transition: opacity 0.4s ease-in-out; /* Hiệu ứng chuyển đổi mờ dần */
+    opacity: 1; /* Đảm bảo ảnh luôn hiển thị đầy đủ ban đầu */
+
+}
+
+
+.main {
+    height: 80%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.list-image {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-image div {
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.control {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: #fff;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.active {
+    background: rgb(188, 96, 96);
+}
