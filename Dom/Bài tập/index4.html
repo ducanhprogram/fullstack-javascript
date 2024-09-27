@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quản Lý Người Dùng</title>
+        <link rel="stylesheet" href="./css/index4.css" />
+
+        <style>
+            .user {
+                cursor: pointer;
+                padding: 10px;
+                margin: 5px;
+                border: 1px solid #ccc;
+            }
+            .active {
+                color: #fff;
+                background-color: green;
+            }
+            .inactive {
+                background-color: gray;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="userList">
+            <li class="user" data-active="true">Nguyen Van A</li>
+            <li class="user" data-active="false">Tran Thi B</li>
+            <li class="user" data-active="true">Le Van C</li>
+            <li class="user" data-active="false">Pham Thi D</li>
+        </ul>
+
+        <script src="./js/index4.js"></script>
+    </body>
+</html>

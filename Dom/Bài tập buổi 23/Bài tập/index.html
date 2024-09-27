@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <button class="open-login">
+            <a href="#">
+                <svg
+                    aria-hidden="true"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    ></path>
+                    <path
+                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    ></path>
+                </svg>
+                Đăng nhập
+            </a>
+        </button>
+
+        <div class="modal-login">
+            <div class="modal-dialog">
+                <i class="close-x fa-solid fa-xmark"></i>
+                <a href="#" class="link-home"
+                    ><img
+                        class="img-home"
+                        src="https://cdnweb.dantri.com.vn/dist/c7b827391b2f30b6fbaf.png"
+                        alt=""
+                /></a>
+                <div class="nav-tab">
+                    <ul>
+                        <li><a href=".login" class="active">Đăng nhập</a></li>
+                        <li><a href=".register">Đăng ký</a></li>
+                    </ul>
+                </div>
+                <!-- End .nav-tap -->
+
+                <div class="tab-content">
+                    <div class="tab-panel active login">
+                        <p class="desc-social">
+                            với các điều khoản mạng xã hội
+                        </p>
+                        <div class="login-social">
+                            <button type="button" class="google social">
+                                <img
+                                    src="https://cdnweb.dantri.com.vn/dist/602a5aca41bdeb805571.svg"
+                                    alt=""
+                                />
+                                Google
+                            </button>
+                            <button type="button" class="facebook social">
+                                <img
+                                    src="https://cdnweb.dantri.com.vn/dist/05804407650f4479d9ef.svg"
+                                    alt=""
+                                />
+                                Facebook
+                            </button>
+                        </div>
+                        <!-- End .login-social -->
+                        <span class="line">
+                            <span class="text">hoặc</span>
+                        </span>
+
+                        <form action="" class="login-form">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input
+                                    class="field-item email"
+                                    type="email"
+                                    placeholder="Email"
+                                />
+                                <span class="error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Mật khẩu</label>
+                                <input
+                                    class="field-item password"
+                                    type="password"
+                                    placeholder="Mật khẩu"
+                                />
+                                <span class="error"></span>
+                            </div>
+                            <div class="forgot-pass">
+                                <button type="button">Quên mật khẩu?</button>
+                            </div>
+                            <button class="btn" type="submit">Đăng nhập</button>
+                        </form>
+                    </div>
+                    <!-- End .tab-panel active login -->
+                    <div class="tab-panel register">Register</div>
+                    <!-- End .tab-panel register -->
+                </div>
+            </div>
+            <!-- End .modal-dialog -->
+
+            <div class="overlay"></div>
+        </div>
+        <!-- End .modal-login -->
+        <script src="./index.js"></script>
+    </body>
+</html>

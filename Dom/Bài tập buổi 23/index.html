@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <a href="#" class="open-login">
+            <svg
+                aria-hidden="true"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                ></path>
+                <path
+                    d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                ></path>
+            </svg>
+            Đăng nhập</a
+        >
+
+        <div class="modal-auth">
+            <div class="modal-dialog">
+                <i class="close-x fa-solid fa-xmark"></i>
+                <a href="#" class="link-home"
+                    ><img
+                        src="https://cdnweb.dantri.com.vn/dist/c7b827391b2f30b6fbaf.png"
+                        alt=""
+                /></a>
+
+                <!-- Cách dùng class -->
+                <!-- <nav class="tab-nav">
+                    <ul>
+                        <li><a href=".login" class="active">Đăng nhập</a></li>
+                        <li><a href=".register">Đăng ký</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="tab-content">
+                    <div class="tab-panel active login">Login</div>
+                    <div class="tab-panel register">Register</div>
+                </div> -->
+
+                <!-- dùng id -->
+                <nav class="tab-nav">
+                    <ul>
+                        <li><a href="#login" class="active">Đăng nhập</a></li>
+                        <li><a href="#register">Đăng ký</a></li>
+                    </ul>
+                </nav>
+                <!-- End .tab-nav -->
+                <div class="tab-content">
+                    <div class="tab-panel active" id="login">
+                        <p class="desc">với các tài khoản mạng xã hội</p>
+                        <div class="login-social">
+                            <button
+                                class="dt-h-11 dt-flex dt-items-center dt-justify-center dt-gap-1.5 dt-bg-ce2e8f0 dt-rounded"
+                                type="button"
+                            >
+                                <img
+                                    class="dt-relative dt-top-px dt-w-auto dt-h-[34px]"
+                                    width="35"
+                                    height="35"
+                                    src="https://cdnweb.dantri.com.vn/dist/602a5aca41bdeb805571.svg"
+                                    alt="Google"
+                                />Google
+                            </button>
+
+                            <button
+                                class="dt-h-11 dt-flex dt-items-center dt-justify-center dt-gap-1.5 dt-bg-ce2e8f0 dt-rounded"
+                                type="button"
+                            >
+                                <img
+                                    class="dt-w-auto dt-h-7"
+                                    width="35"
+                                    height="35"
+                                    src="https://cdnweb.dantri.com.vn/dist/05804407650f4479d9ef.svg"
+                                    alt="Facebook"
+                                />Facebook
+                            </button>
+                        </div>
+                        <!-- End .login-social -->
+                        <div class="crossbar">
+                            <span class="line">hoặc</span>
+                        </div>
+                        <!-- End .crossbar -->
+                        <form action="" class="login-form">
+                            <div class="msg"></div>
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input
+                                    type="email"
+                                    class="field-item email"
+                                    placeholder="Email"
+                                />
+                                <span class="error"></span>
+                            </div>
+                            <!-- End .form-group -->
+
+                            <div class="form-group">
+                                <label for="">Mật khẩu</label>
+                                <div class="password-field">
+                                    <input
+                                        type="password"
+                                        class="field-item password"
+                                        placeholder="Mật khẩu"
+                                    />
+                                    <span class="show-password hide">
+                                        <svg
+                                            aria-hidden="true"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 32 32"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M6 15.9977C6 15.9977 9.63636 8.72501 16 8.72501C22.3636 8.72501 26 15.9977 26 15.9977C26 15.9977 22.3636 23.2705 16 23.2705C9.63636 23.2705 6 15.9977 6 15.9977Z"
+                                                stroke="#808080"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                            <path
+                                                d="M16 18.725C17.5062 18.725 18.7273 17.504 18.7273 15.9977C18.7273 14.4915 17.5062 13.2704 16 13.2704C14.4937 13.2704 13.2727 14.4915 13.2727 15.9977C13.2727 17.504 14.4937 18.725 16 18.725Z"
+                                                stroke="#808080"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+
+                                        <svg
+                                            aria-hidden="true"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 32 32"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M14.0909 8.94544C14.7167 8.79897 15.3573 8.72575 16 8.72726C22.3636 8.72726 26 16 26 16C25.4482 17.0324 24.7901 18.0043 24.0364 18.9M17.9273 17.9273C17.6776 18.1952 17.3765 18.4101 17.042 18.5592C16.7074 18.7082 16.3463 18.7884 15.9801 18.7949C15.6139 18.8013 15.2501 18.734 14.9106 18.5968C14.571 18.4596 14.2625 18.2555 14.0035 17.9965C13.7445 17.7375 13.5404 17.429 13.4032 17.0894C13.266 16.7498 13.1987 16.3861 13.2051 16.0199C13.2116 15.6537 13.2917 15.2926 13.4408 14.958C13.5899 14.6235 13.8048 14.3224 14.0727 14.0727M21.4 21.4C19.846 22.5845 17.9537 23.2408 16 23.2727C9.63636 23.2727 6 16 6 16C7.13081 13.8926 8.69921 12.0514 10.6 10.6L21.4 21.4Z"
+                                                stroke="#808080"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                            <path
+                                                d="M6 6L26 26"
+                                                stroke="#808080"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <!-- End .password-field -->
+
+                                <span class="error"></span>
+                            </div>
+                            <button type="button" class="forgot-password">
+                                Quên mật khẩu?
+                            </button>
+                            <button type="submit" class="btn">Đăng nhập</button>
+                        </form>
+                        <!-- .login-form -->
+                    </div>
+                    <div class="tab-panel" id="register">
+                        <p class="desc-regis">
+                            Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!
+                        </p>
+                        <form action=""></form>
+                    </div>
+                </div>
+                <!-- End .tab-content -->
+            </div>
+            <!-- End .modal-dialog -->
+            <div class="overlay"></div>
+        </div>
+        <!-- End .modal-auth -->
+
+        <script src="./index.js"></script>
+    </body>
+</html>

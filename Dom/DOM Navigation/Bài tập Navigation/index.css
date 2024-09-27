@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container .menu {
+    background: #000;
+}
+
+.container .menu li a {
+    display: inline-block;
+    width: 300px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.container .menu ul li a{
+    display: inline-block;
+    padding: 10px 50px;
+}
+
+.menu ul {
+    display: none;
+}
+
+.menu ul.open {
+    display: block;
+    background-color: #3a4a3a;
+}
+
+.menu > li.has-children > a::after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f107";
+    float: right;
+}
+
+
+.menu > li.has-children.open > a::after {
+    rotate: 180deg;
+}
+   

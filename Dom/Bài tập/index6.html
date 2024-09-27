@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quản Lý Sản Phẩm</title>
+        <style>
+            .product {
+                margin: 10px 0;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+            .out-of-stock {
+                color: gray;
+                text-decoration: line-through;
+            }
+            input {
+                width: 30px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="productList">
+            <li class="product" data-price="100" data-quantity="5">
+                Sản phẩm 1 - Số lượng: <span class="quantity">5</span>
+                <input type="text" class="update-input" placeholder="+/-" />
+            </li>
+            <li class="product" data-price="150" data-quantity="3">
+                Sản phẩm 2 - Số lượng: <span class="quantity">3</span>
+                <input type="text" class="update-input" placeholder="+/-" />
+            </li>
+            <li class="product" data-price="200" data-quantity="0">
+                Sản phẩm 3 - Số lượng: <span class="quantity">0</span>
+                <input
+                    type="text"
+                    class="update-input"
+                    placeholder="+/-"
+                    disabled
+                />
+            </li>
+        </ul>
+
+        <script src="./js/index6.js"></script>
+    </body>
+</html>

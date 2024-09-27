@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.open-login {
+    display: flex;
+    align-items: center;
+}
+
+.open-login svg {
+    stroke: #4d4d4d;
+    margin: 0 9px 0 0
+}
+
+/* .modal-auth {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s linear;
+    transition-property: opacity, visibility;
+} */
+
+.modal-auth .close-x {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 90%;
+    cursor: pointer;
+}
+
+.modal-auth.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-auth .modal-dialog {
+     width: 450px;
+     margin: 0 auto;
+     background-color: #fff;
+     position: fixed;
+    left: 0;
+    right: 0;
+    top: 40px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.modal-auth .modal-dialog .link-home {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.modal-auth .modal-dialog .link-home img {
+    width: auto;
+    height: 1.75rem;
+}
+
+
+
+.modal-auth .overlay {
+    background-color: rgba(0, 0, 0, 0.315);
+    position: fixed;
+    inset: 0;
+}
+
+.modal-auth .tab-nav {
+    padding-top: 20px;
+}
+
+.modal-auth .tab-nav ul {
+    display: flex;
+
+}
+
+.modal-auth .tab-nav ul li {
+    flex: 1 1 auto;
+}
+
+.modal-auth .tab-nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: #EEEEEE;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.modal-auth .tab-nav ul li a.active {
+    background-color: #1A7900;
+    color: #fff;
+ 
+}
+
+
+.modal-auth .tab-content {
+    padding: 20px;
+}
+
+
+.modal-auth .tab-content .desc {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.modal-auth .tab-content .desc-regis {
+    display: flex;
+    justify-content: left;
+    font-size: 14px;
+}
+
+.modal-auth .tab-content .tab-panel:not(.active) {
+    display: none;
+}
+
+
+.modal-auth .tab-panel .login-social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-auth .tab-panel .login-social button {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal-auth .tab-panel .login-social button img {
+    width: auto;
+    height: 34px;
+    padding-right: 10px;
+}
+
+.modal-auth .tab-panel .crossbar {
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.modal-auth .tab-panel .crossbar .line {
+    position: relative;
+    padding: 0 15px;
+    background-color: #fff;
+    z-index: 10;
+
+
+}
+
+.modal-auth .tab-panel .crossbar .line::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    background-color: #ccccccaf;
+    z-index: -1;
+}
+
+.modal-auth .login-form .form-group {
+    margin-bottom: 15px;
+}
+
+
+.modal-auth .login-form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.modal-auth .login-form input {
+    width: 100%;
+    border: 1px solid #efefef;
+    padding: 15px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.modal-auth .login-form .forgot-password {
+    display: flex;
+    background-color: #fff;
+    font-style: italic;
+    margin-bottom: 15px;
+    width: 100%;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.modal-auth .login-form .btn {
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.modal-auth .login-form .error {
+    color: red;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.modal-auth .login-form .has-error .field-item {
+    border-color: red;
+}
+
+.modal-auth .login-form .msg {
+    color: Red;
+}
+
+.modal-auth .login-form .password-field {
+    position: relative;
+}
+
+.modal-auth .login-form  .show-password {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-auth .login-form  .show-password svg:first-child {
+    display: none;
+}
+
+.modal-auth .login-form  .show-password.hide svg:first-child {
+    display: block;
+}
+
+.modal-auth .login-form  .show-password.hide svg + svg {
+    display: none;
+}
